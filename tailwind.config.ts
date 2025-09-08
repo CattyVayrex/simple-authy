@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Vazir", "IRANSans", "Inter", "system-ui", "sans-serif"],
-        persian: ["Vazir", "IRANSans"],
+        sans: ["Vazirmatn", "IRANSans", "Inter", "system-ui", "sans-serif"],
+        persian: ["Vazirmatn", "IRANSans"],
       },
       colors: {
         primary: {
