@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Simple Authy
 
-## Getting Started
+Just a simple cool looking login and dashbaord page written in TypeScript using Next.js and stuff. 
 
-First, run the development server:
+## Simply run it by:
 
 ```bash
+# install the stuff
+npm install
+
+# run the next app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then just go ahead and open [http://localhost:3000](http://localhost:3000) to see this simple app thing.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure thing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                  # Next.js App Router
+│   ├── dashboard/        # Dashboard page
+│   ├── layout.tsx        # The main layout
+│   └── page.tsx          # The login page thing 
+├── components/
+│   ├── ui/              # some reusable components here
+│   └── LoginForm.tsx    # The actual login form
+├── context/             # Contexts should be here
+│   └── ThemeContext.tsx # I mean, The Theme Context
+├── lib/                 # some helper functions
+│   ├── auth.ts         # Auth helper thingy
+│   └── validation.ts   # Validation helper thingy.
+└── types/              # Basically TypeScript types
+```
 
-## Learn More
+## I used:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js + TypeScript
+- Tailwind CSS and implemented Dark/Light Mode
+- RandomUser API
